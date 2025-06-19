@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #4880ff;
+  --color-secondary: #202224;
+  --color-tertiary: #606060;
+  --color-quinary: #e5e7eb;
+  --color-lighttext: #a3aed0;
+  --color-darkpurple: #2b3674;
+  --color-background: #f5f6fa;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  table thead {
+    @apply bg-[#F1F4F9];
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  table thead th {
+    @apply px-4 py-3 text-secondary font-semibold text-sm;
+  }
+
+  table thead th:first-child {
+    @apply rounded-s-lg;
+  }
+
+  table thead th:last-child {
+    @apply rounded-e-lg;
+  }
+
+  table tbody td {
+    @apply text-center px-4 py-3 text-tertiary  text-sm;
+  }
+  .flex-all-center {
+    @apply flex items-center justify-center;
+  }
 }
