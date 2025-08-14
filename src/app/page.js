@@ -1,5 +1,5 @@
-import HomePage from "@/ui/pages/HomePage";
-import MainLayout from "@/ui/templates/MainLayout";
+import HomePage from "@/components/pages/HomePage";
+import MainLayout from "@/components/templates/MainLayout";
 
 export default function Home() {
   return (

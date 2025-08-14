@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "remixicon/fonts/remixicon.css"; /* ← add this */
 
 @theme {
   --color-primary: #4880ff;

@@ -1,11 +1,11 @@
-import Notification from "@/components/pages/Notification";
+import CreateAgent from "@/components/molecules/CreateAgent";
 import MainLayout from "@/components/templates/MainLayout";
 import React from "react";
 
 const page = () => {
   return (
     <MainLayout>
-      <Notification />
+      <CreateAgent />
     </MainLayout>
   );
 };
